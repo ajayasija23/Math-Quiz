@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="@dimen/dp_one_thirty"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_one_hundred"
+            android:id="@+id/play_quiz"
+            android:text="Play Quiz"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/dp_twenty"
+            android:background="@drawable/round_corners" />
+        <Button
+            android:layout_width="@dimen/dp_one_thirty"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_fourty"
+            android:id="@+id/share"
+            android:text="Share"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/dp_twenty"
+            android:background="@drawable/round_corners" />
+        <Button
+            android:layout_width="@dimen/dp_one_thirty"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_fourty"
+            android:id="@+id/About"
+            android:text="About"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/dp_twenty"
+            android:background="@drawable/round_corners" />
+        <Button
+            android:layout_width="@dimen/dp_one_thirty"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_fourty"
+            android:id="@+id/contact"
+            android:text="Contact us"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:padding="@dimen/dp_twenty"
+            android:background="@drawable/round_corners" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
