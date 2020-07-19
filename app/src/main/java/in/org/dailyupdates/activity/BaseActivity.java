@@ -1,4 +1,4 @@
-package in.org.dailyupdates;
+package in.org.dailyupdates.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 

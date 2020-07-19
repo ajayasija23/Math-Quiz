@@ -5,13 +5,25 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+import in.org.dailyupdates.fragments.question.presenter.QuestionPresenterImpl;
+
 public class FragmentQuestionModelImpl implements FragmentQuestionModel {
     private int type;
     private String question;
     private int answer;
+    QuestionPresenterImpl questionPresenter;
     private List<String> options=new ArrayList<String>();
+
+
+    public FragmentQuestionModelImpl(QuestionPresenterImpl questionPresenter) {
+
+        this.questionPresenter=questionPresenter;
+
+    }
+
     @Override
     public void generateQuestion() {
+        options.clear();
         int num1=(int)(Math.random()*100);
         int num2=(int)(Math.random()*100);
         type= (int)(Math.random()*6);
@@ -36,12 +48,12 @@ public class FragmentQuestionModelImpl implements FragmentQuestionModel {
                     num1=num2;
                     num2=temp;
                 }
-                if(num2==0)
+                while (num2==0)
                 {
                     num2=(int)(Math.random()*100);
                 }
-                question=num1+" / "+num2+" = ?";
-                answer=num1-num2;
+                question="Quotient of "+num1+" / "+num2+" = ?";
+                answer=num1/num2;
                 break;
             case 4:
                 question="H.C.F of "+num1+" , "+num2+"=?";
@@ -53,8 +65,7 @@ public class FragmentQuestionModelImpl implements FragmentQuestionModel {
                 break;
         }
         createOptions();
-
-
+        questionPresenter.QuestionGenerated(question,options);
     }
 
     private void createOptions() {
@@ -100,11 +111,11 @@ public class FragmentQuestionModelImpl implements FragmentQuestionModel {
     {
         if(Integer.parseInt(enteredAns)==answer)
         {
-
+            questionPresenter.onCorrect();
         }
         else
         {
-
+            questionPresenter.onWrong();
         }
 
     }

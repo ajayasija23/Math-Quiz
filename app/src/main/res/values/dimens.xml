@@ -17,4 +17,8 @@
     <dimen name="dp_five_hundred">500dp</dimen>
     <dimen name="dp_three_hundred">300dp</dimen>
     <dimen name="dp_sixty">60dp</dimen>
+    <dimen name="dp_two">2dp</dimen>
+    <dimen name="dp_one">1dp</dimen>
+    <dimen name="dp_one_fifty">150dp</dimen>
+    <dimen name="dp_five">5dp</dimen>
 </resources>

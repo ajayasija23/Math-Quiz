@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableRow
+        android:layout_marginTop="@dimen/dp_twenty">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_ten"
+            android:text="@string/mobile_no"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_weight=".6"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/button_mob_no"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/Mobile_no_value"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="@dimen/dp_twenty">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_ten"
+            android:text="@string/email"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_weight=".6"/>
+        <Button android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/email_value"
+            android:textAlignment="textStart"
+            android:id="@+id/button_email"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="@dimen/dp_twenty">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dp_ten"
+            android:text="@string/Address"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_weight=".6"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_ten"
+            android:text="@string/Address_value"
+            android:textColor="@android:color/black"
+            android:textAlignment="textStart"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </TableRow>
+
+</TableLayout>

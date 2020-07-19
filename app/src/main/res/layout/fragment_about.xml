@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_thirty"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/image_about"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/about_text_bg"
+            android:padding="@dimen/dp_ten"
+            android:layout_margin="@dimen/dp_fourty">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/dp_fourty">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_text"
+                    android:padding="@dimen/dp_fourty"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

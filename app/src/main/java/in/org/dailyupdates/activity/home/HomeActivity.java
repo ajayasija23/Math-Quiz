@@ -2,7 +2,7 @@ package in.org.dailyupdates.activity.home;
 
 import androidx.fragment.app.FragmentTransaction;
 import in.org.dailyupdates.R;
-import in.org.dailyupdates.BaseActivity;
+import in.org.dailyupdates.activity.BaseActivity;
 import in.org.dailyupdates.fragments.home.FragmentHome;
 import in.org.dailyupdates.databinding.ActivityHomeBinding;
 

@@ -10,8 +10,20 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="adUnitQuestionPage">ca-app-pub-8127434234485566/5646630731</string>
+    <string name="adUnitHomePage">ca-app-pub-8127434234485566/3212039082</string>
+    <string name="appid">ca-app-pub-8127434234485566~5838202426</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="about_text">Hello Friends I am Ajay From Tohana. I am studying MCA from CDLU Sirsa.
+    I develop android apps. This is an app for Quiz on mathmatics. I have also uploaded an app for weather forecasting.</string>
+    <string name="Mobile_no_value">7015166413</string>
+    <string name="mobile_no">Mobile No:</string>
+    <string name="email">Email:</string>
+    <string name="email_value">ajayasija23@gmail.com</string>
+    <string name="Address">Address:</string>
+    <string name="Address_value">Tohana</string>
+    <string name="adUnitScorePage">123</string>
 </resources>
